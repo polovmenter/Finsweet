@@ -1,0 +1,9 @@
+body {
+    font-family: $font-family-base;
+    color: $dark;
+}
+
+a,
+button {
+    transition-duration: $transition-duration;
+}

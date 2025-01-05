@@ -1,0 +1,15 @@
+.button {
+    @include fluid-text(16, 18);
+
+    font-family: $font-family-accent;
+    font-weight: 700;
+    line-height: 1.33;
+    color: $dark;
+    padding: 16px 48px;
+    background-color: $yellow;
+    display: inline-block;
+    
+    @include hover {
+        background-color: #EDC14A;
+    }
+}
