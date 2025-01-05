@@ -1,0 +1,18 @@
+.header {
+    padding-block: 12px;
+    background-color: $dark;
+
+    &__inner {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    &__nav {
+        margin-left: auto;
+        
+        @include mobile {
+            display: none;
+        }
+    }
+}

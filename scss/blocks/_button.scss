@@ -12,4 +12,12 @@
     @include hover {
         background-color: #EDC14A;
     }
+
+    &--light {
+        background-color: $light;
+
+        @include hover {
+            background-color: $gray-light;
+        }
+    }
 }
