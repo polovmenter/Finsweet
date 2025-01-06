@@ -40,6 +40,10 @@
 .h1,
 .h2 {
     letter-spacing: -2px;
+
+    @include tablet {
+        letter-spacing: -1px;
+    }
 }
 
 .display {

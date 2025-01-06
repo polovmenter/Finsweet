@@ -360,6 +360,13 @@ svg *[stroke] {
 .h2 {
   letter-spacing: -2px;
 }
+@media (max-width: 1025px) {
+  .display,
+  .h1,
+  .h2 {
+    letter-spacing: -1px;
+  }
+}
 
 .display {
   font-size: clamp(36px, 3.8888888889vw, 56px);
@@ -414,6 +421,7 @@ svg *[stroke] {
 body {
   font-family: var(--font-family-base);
   color: var(--color-dark);
+  background-color: var(--color-light);
 }
 
 a,
@@ -430,6 +438,11 @@ button {
   padding: 16px 48px;
   background-color: var(--color-yellow);
   display: inline-block;
+}
+@media (max-width: 768px) {
+  .button {
+    padding: 10px 30px;
+  }
 }
 @media (hover: hover) {
   .button:hover {
@@ -456,10 +469,6 @@ button {
 }
 
 .nav {
-  display: flex;
-  align-items: center;
-  -moz-column-gap: 32px;
-       column-gap: 32px;
   --underline-width: 0;
 }
 .nav__list {
@@ -519,6 +528,91 @@ button {
   background-color: var(--color-light);
 }
 
+.social {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 16px;
+       column-gap: 16px;
+  color: var(--color-dark);
+}
+.social__link {
+  color: inherit;
+}
+.social__link svg {
+  display: block;
+}
+
+.subscribe {
+  padding: 80px 64px;
+  background-color: rgba(255, 255, 255, 0.05);
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+}
+@media (max-width: 1025px) {
+  .subscribe {
+    padding: 50px 34px;
+    -moz-column-gap: 40px;
+         column-gap: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .subscribe {
+    padding: 40px 30px;
+    flex-direction: column;
+    row-gap: 30px;
+  }
+}
+@media (max-width: 520px) {
+  .subscribe {
+    padding: 25px 15px;
+  }
+}
+.subscribe__title {
+  color: var(--color-light);
+  max-width: 550px;
+}
+@media (max-width: 1025px) {
+  .subscribe__title {
+    max-width: 450px;
+  }
+}
+@media (max-width: 768px) {
+  .subscribe__title {
+    max-width: 300px;
+  }
+}
+.subscribe__form {
+  padding-top: 4px;
+  max-width: 526px;
+  width: 100%;
+  display: flex;
+  -moz-column-gap: 24px;
+       column-gap: 24px;
+}
+@media (max-width: 768px) {
+  .subscribe__form {
+    max-width: 450px;
+    padding-top: 0;
+    -moz-column-gap: 20px;
+         column-gap: 20px;
+  }
+}
+.subscribe__input {
+  width: 100%;
+  padding: 14px 25px;
+  border: 1px solid var(--color-gray-dark);
+  background-color: transparent;
+  color: var(--color-light);
+}
+@media (max-width: 520px) {
+  .subscribe__input {
+    padding: 10px 15px;
+  }
+}
+
 .header {
   padding-block: 12px;
   background-color: var(--color-dark);
@@ -530,9 +624,86 @@ button {
 }
 .header__nav {
   margin-left: auto;
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 32px;
+       column-gap: 32px;
 }
 @media (max-width: 768px) {
   .header__nav {
     display: none;
   }
+}
+
+.footer {
+  background-color: var(--color-dark);
+  padding-block: 60px;
+}
+@media (max-width: 1025px) {
+  .footer {
+    padding-block: 40px;
+  }
+}
+@media (max-width: 768px) {
+  .footer {
+    padding-block: 30px;
+  }
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+}
+.footer__top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  row-gap: 15px;
+  flex-wrap: wrap;
+  margin-bottom: 55px;
+}
+@media (max-width: 768px) {
+  .footer__top {
+    margin-bottom: 30px;
+  }
+}
+@media (max-width: 520px) {
+  .footer__nav {
+    width: 100%;
+  }
+}
+.footer__nav-list {
+  flex-wrap: wrap;
+  row-gap: 10px;
+}
+.footer__subscribe {
+  margin-bottom: 48px;
+}
+@media (max-width: 768px) {
+  .footer__subscribe {
+    margin-bottom: 30px;
+  }
+}
+.footer__bottom {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  -moz-column-gap: 20px;
+       column-gap: 20px;
+  flex-wrap: wrap;
+}
+.footer__info, .footer__email, .footer__phone {
+  color: rgba(255, 255, 255, 0.7);
+}
+.footer__contact {
+  display: flex;
+  -moz-column-gap: 10px;
+       column-gap: 10px;
+}
+.footer__social {
+  padding-top: 12px;
+  -moz-column-gap: 27px;
+       column-gap: 27px;
+  color: var(--color-gray);
 }/*# sourceMappingURL=style.css.map */

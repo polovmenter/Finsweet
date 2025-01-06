@@ -1,0 +1,14 @@
+.social {
+    display: flex;
+    align-items: center;
+    column-gap: 16px;
+    color: $dark;
+    
+    &__link {
+        color: inherit;
+
+        & svg {
+            display: block;
+        }
+    }
+}

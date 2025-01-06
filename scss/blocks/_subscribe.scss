@@ -1,0 +1,62 @@
+.subscribe {
+    padding: 80px 64px;
+    background-color: rgba(255, 255, 255, 0.05);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    column-gap: 60px;
+
+    @include tablet {
+        padding: 50px 34px;
+        column-gap: 40px;
+    }
+
+    @include mobile {
+        padding: 40px 30px;
+        flex-direction: column;
+        row-gap: 30px;
+    }
+
+    @include mobile-s {
+        padding: 25px 15px;
+    }
+
+    &__title {
+        color: $light;
+        max-width: 550px;
+        
+        @include tablet {
+            max-width: 450px;
+        }
+
+        @include mobile {
+            max-width: 300px;
+        }
+    }
+
+    &__form {
+        padding-top: 4px;
+        max-width: 526px;
+        width: 100%;
+        display: flex;
+        column-gap: 24px;
+
+        @include mobile {
+            max-width: 450px;
+            padding-top: 0;
+            column-gap: 20px;
+        }
+    }
+
+    &__input {
+        width: 100%;
+        padding: 14px 25px;
+        border: 1px solid $gray-dark;
+        background-color: transparent;
+        color: $light;
+
+        @include mobile-s {
+            padding: 10px 15px;
+        }
+    }
+}

@@ -1,0 +1,77 @@
+.footer {
+    background-color: $dark;
+    padding-block: 60px;
+
+    @include tablet {
+        padding-block: 40px;
+    }
+
+    @include mobile {
+        padding-block: 30px;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+    }
+
+    &__top {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        column-gap: 20px;
+        row-gap: 15px;
+        flex-wrap: wrap;
+        margin-bottom: 55px;
+
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__nav {
+
+        @include mobile-s {
+            width: 100%;
+        }
+
+        &-list {
+            
+            flex-wrap: wrap;
+            row-gap: 10px;
+        }
+    }
+
+    &__subscribe {
+        margin-bottom: 48px;
+
+        @include mobile {
+            margin-bottom: 30px;
+        }
+    }
+
+    &__bottom {
+        display: flex;
+        justify-content: space-between;
+        align-items: start;
+        column-gap: 20px;
+        flex-wrap: wrap;
+    }
+
+    &__info,
+    &__email,
+    &__phone {
+        color: rgba(255, 255, 255, 0.7);
+    }
+
+    &__contact {
+        display: flex;
+        column-gap: 10px;
+    }
+
+    &__social {
+        padding-top: 12px;
+        column-gap: 27px;
+        color: $gray;
+    }
+}

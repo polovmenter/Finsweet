@@ -10,7 +10,10 @@
 
     &__nav {
         margin-left: auto;
-        
+        display: flex;
+        align-items: center;
+        column-gap: 32px;
+
         @include mobile {
             display: none;
         }
