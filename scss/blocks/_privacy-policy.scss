@@ -1,0 +1,56 @@
+.privacy-policy-top__inner {
+    display: flex;
+    flex-direction: column;
+    row-gap: 4px;
+}
+
+.privacy-policy {
+    padding-block: $section-padding-y;
+    
+    &__inner {
+        --container-width: 770px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+
+        @include mobile {
+            row-gap: 22px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+
+        @include tablet {
+            row-gap: 14px;
+        }
+
+        @include mobile {
+            row-gap: 10px;
+        }
+
+        &-top {
+            row-gap: 32px;
+
+            @include tablet {
+                row-gap: 22px;
+            }
+
+            @include mobile {
+                row-gap: 14px;
+            }
+        }
+    }
+
+    &__textbox {
+        display: flex;
+        flex-direction: column;
+        row-gap: 30px;
+
+        @include mobile {
+            row-gap: 20px;
+        }
+    }
+}

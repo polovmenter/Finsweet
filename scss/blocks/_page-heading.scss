@@ -1,0 +1,17 @@
+.page-heading {
+    padding-block: 80px;
+    background-color: $purple-light;
+    text-align: center;
+
+    @include tablet {
+        padding-block: 60px;
+    }
+    
+    @include mobile {
+        padding-block: 40px;
+    }
+
+    &__text {
+        color: $gray;
+    }
+}
