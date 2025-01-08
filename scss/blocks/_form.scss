@@ -1,0 +1,65 @@
+.form {
+
+    &__fieldset {
+        border: none;
+        display: flex;
+        flex-direction: column;
+        row-gap: 16px;
+    }
+
+    &__input {
+        @include fluid-text(12, 16);
+
+        line-height: 1.75;
+        padding: 23px 24px;
+        border: 1px solid rgba(109, 110, 118, 0.5);
+        border-radius: 2px;
+
+        @include mobile-s {
+            padding: 16px;
+        }
+
+        &::placeholder {
+            @include fluid-text(12, 16);
+
+            line-height: 1.75;
+            color: $dark;
+        }
+    }
+
+    &__select {
+        width: 100%;
+        appearance: none;
+
+        &-wrapper {
+            position: relative;
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 50%;
+                right: 60px;
+                width: 6px;
+                height: 6px;
+                border-bottom: 2px solid #000;
+                border-right: 2px solid #000;
+                transform: translateY(-50%) rotateZ(45deg);
+
+                @include mobile-s {
+                    right: 40px;
+                }
+            }
+        }
+    }
+
+    &__textarea {
+        min-height: 144px;
+        resize: none
+    }
+
+    &__button {
+        @include fluid-text(16, 24);
+
+        padding: 16px 24px;
+    }
+}

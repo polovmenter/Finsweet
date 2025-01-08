@@ -12,13 +12,19 @@ a {
     text-decoration: none;
 }
 
-button {
+button,
+textarea,
+select,
+option {
     font-family: inherit;
     font-size: inherit;
     font-weight: inherit;
     line-height: inherit;
     color: inherit;
     border: none;
+}
+
+button {
     cursor: pointer;
 }
 
