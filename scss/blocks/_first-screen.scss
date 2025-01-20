@@ -1,0 +1,58 @@
+.first-screen {
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+    min-height: 720px;
+    color: $light;
+
+    @include mobile {
+        min-height: 500px;
+    }
+
+    &__inner {
+        padding-block: 128px 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        @include mobile {
+            padding-top: 80px;
+        }
+    }
+
+    &__heading {
+        max-width: 800px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+        margin-bottom: 16px;
+
+        @include tablet {
+            max-width: 600px;
+            row-gap: 18px;
+            margin-bottom: 14px;
+        }
+
+        @include mobile {
+            row-gap: 14px;
+            margin-bottom: 10px;
+        }
+    }
+
+    &__author {
+        color: $yellow;
+
+        @include hover {
+            text-decoration: underline;
+        }
+    }
+
+    &__text {
+        margin-bottom: 48px;
+        max-width: 600px;
+
+        @include tablet {
+            max-width: 450px;
+        }
+    }
+}

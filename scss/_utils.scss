@@ -103,7 +103,8 @@
 }
 
 .accent {
-    font-size: 16px;
+    @include fluid-text(14, 16);
+    
     line-height: 1.25;
     font-weight: 500;
     text-transform: uppercase;
