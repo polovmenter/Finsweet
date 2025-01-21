@@ -1,0 +1,40 @@
+.featured {
+    padding-block: $section-padding-y;
+
+    &__inner {
+        display: flex;
+        align-items: start;
+        column-gap: 32px;
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        row-gap: 32px;
+
+        &-heading {
+            display: flex;
+            justify-content: space-between;
+            column-gap: 32px;
+            align-items: center;
+        }
+
+        &:last-child{
+            max-width: 517px;
+            width: 100%;
+        }
+
+        &-link {
+            color: $purple;
+           
+            @include hover {
+                text-decoration: underline;
+            }
+        }
+    }
+
+    &__list {
+        display: flex;
+        flex-direction: column;
+    }
+}

@@ -31,7 +31,6 @@
 
 .h1,
 .h2,
-.h3,
 .h4 {
     line-height: 1.33;
 }
@@ -64,6 +63,7 @@
     @include fluid-text(18, 28);
 
     letter-spacing: -1px;
+    line-height: 1.42;
 }
 
 .h4 {
