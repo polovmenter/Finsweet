@@ -5,6 +5,12 @@
         display: flex;
         align-items: start;
         column-gap: 32px;
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            row-gap: 32px;
+        }
     }
 
     &__item {
@@ -19,14 +25,23 @@
             align-items: center;
         }
 
-        &:last-child{
+        &:last-child {
             max-width: 517px;
             width: 100%;
+
+            @include tablet {
+                max-width: 300px;
+            }
+
+            @include mobile {
+                align-self: start;
+                max-width: 100%;
+            }
         }
 
         &-link {
             color: $purple;
-           
+
             @include hover {
                 text-decoration: underline;
             }
@@ -36,5 +51,14 @@
     &__list {
         display: flex;
         flex-direction: column;
+
+        @include mobile {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+        }
+
+        @include mobile-s {
+            display: flex;
+        }
     }
 }

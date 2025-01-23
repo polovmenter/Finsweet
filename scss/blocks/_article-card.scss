@@ -2,6 +2,10 @@
     display: flex;
     gap: 32px;
 
+    @include tablet {
+        gap: 24px;
+    }
+
     &__image {
         width: 100%;
         height: auto;
@@ -17,6 +21,10 @@
         flex-direction: column;
         row-gap: 16px;
         align-items: start;
+        
+        @include tablet {
+            row-gap: 10px;
+        }
 
         &--mini {
             row-gap: 8px;
@@ -29,6 +37,10 @@
         align-items: center;
         column-gap: 12px;
         color: $gray-dark;
+
+        @include tablet {
+            column-gap: 8px;
+        }
 
         &::after {
             display: block;
@@ -63,7 +75,17 @@
         flex-direction: column;
         align-items: start;
         padding: 32px;
+        max-width: 733px;
         border: 1px solid rgba(109, 110, 118, 0.1);
+        
+        @include tablet{ 
+            padding: 20px;
+        }
+
+        @include mobile {
+            max-width: 500px;
+            padding: 15px;
+        }
     }
 
     &--mini {
@@ -73,6 +95,11 @@
         max-width: 517px;
         background-color: $light;
         transition: background-color $transition-duration;
+
+        @include tablet {
+            padding: 20px;
+            max-width: 250px;
+        }
 
         @include hover {
             background-color: $yellow-light;
