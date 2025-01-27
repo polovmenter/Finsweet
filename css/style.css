@@ -779,6 +779,61 @@ button {
   }
 }
 
+.about__wrapper {
+  position: relative;
+}
+.about__inner {
+  display: flex;
+  -moz-column-gap: 60px;
+       column-gap: 60px;
+  padding: 96px 80px;
+  background-color: var(--color-purple-light);
+}
+.about__decor {
+  width: 83%;
+  height: 23px;
+  margin-left: auto;
+  display: flex;
+}
+.about__decor::before {
+  content: "";
+  display: block;
+  width: 75%;
+  height: 100%;
+  background-color: var(--color-purple);
+}
+.about__decor::after {
+  content: "";
+  display: block;
+  width: 27%;
+  height: 100%;
+  background-color: var(--color-yellow);
+}
+.about__item {
+  max-width: 515px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 24px;
+}
+.about__item-content {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+}
+.about__item-subtitle {
+  max-width: 493px;
+}
+.about__item-subtitle--small {
+  max-width: 390px;
+}
+.about__item-link {
+  font-size: clamp(16px, 1.25vw, 18px);
+  font-family: var(--font-family-accent);
+  font-weight: 700;
+  line-height: 1.77;
+  color: var(--color-purple);
+}
+
 .contact {
   --container-width: 770px;
   padding-block: var(--section-padding-y);

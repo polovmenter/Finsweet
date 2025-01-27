@@ -1,0 +1,66 @@
+.about {
+
+    &__wrapper {
+        position: relative;
+    }
+
+    &__inner {
+        display: flex;
+        column-gap: 60px;
+        padding: 96px 80px;
+        background-color: $purple-light;
+    }
+
+    &__decor {
+        width: 83%;
+        height: 23px;
+        margin-left: auto;
+        display: flex;
+
+        &::before {
+            content: '';
+            display: block;
+            width: 75%;
+            height: 100%;
+            background-color: $purple;
+        }
+
+        &::after {
+            content: '';
+            display: block;
+            width: 27%;
+            height: 100%;
+            background-color: $yellow;
+        }
+    }
+
+    &__item {
+        max-width: 515px;
+        display: flex;
+        flex-direction: column;
+        row-gap: 24px;
+
+        &-content {
+            display: flex;
+            flex-direction: column;
+            row-gap: 16px;
+        }
+
+        &-subtitle {
+            max-width: 493px;
+
+            &--small {
+                max-width: 390px;
+            }
+        }
+
+        &-link {
+            @include fluid-text(16, 18);
+
+            font-family: $font-family-accent;
+            font-weight: 700;
+            line-height: 1.77;
+            color: $purple;
+        }
+    }
+}
