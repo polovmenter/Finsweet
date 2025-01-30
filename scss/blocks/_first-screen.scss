@@ -5,6 +5,10 @@
     min-height: 720px;
     color: $light;
 
+    @include tablet {
+        min-height: 600px;
+    }
+
     @include mobile {
         min-height: 500px;
     }
