@@ -966,6 +966,9 @@ button {
   flex-direction: column;
   row-gap: 4px;
 }
+.category__item-link {
+  color: var(--color-dark);
+}
 
 .contact {
   --container-width: 770px;
