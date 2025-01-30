@@ -1,5 +1,8 @@
 .category {
-    padding-block: $section-padding-y;
+    
+    &--main {
+        padding-block: $section-padding-y;
+    }
 
     &__inner {
         display: flex;

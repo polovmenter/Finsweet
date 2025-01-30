@@ -3,9 +3,9 @@
     &__wrapper {
         position: relative;
 
-        @include mobile-s {
-            margin-inline: -15px;
-        }
+        // @include mobile-s {
+        //     margin-inline: -15px;
+        // }
     }
 
     &__inner {

@@ -788,11 +788,6 @@ button {
 .about__wrapper {
   position: relative;
 }
-@media (max-width: 520px) {
-  .about__wrapper {
-    margin-inline: -15px;
-  }
-}
 .about__inner {
   display: flex;
   -moz-column-gap: 60px;
@@ -887,7 +882,7 @@ button {
   color: var(--color-purple);
 }
 
-.category {
+.category--main {
   padding-block: var(--section-padding-y);
 }
 .category__inner {
@@ -968,6 +963,94 @@ button {
 }
 .category__item-link {
   color: var(--color-dark);
+}
+
+.story-section__inner {
+  position: relative;
+}
+@media (max-width: 768px) {
+  .story-section__inner {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+.story-section__image {
+  width: 74%;
+  max-width: 950px;
+  height: auto;
+}
+@media (max-width: 768px) {
+  .story-section__image {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+.story-section__body {
+  max-width: 706px;
+  background-color: var(--color-light);
+  padding: 80px;
+  position: absolute;
+  bottom: 0;
+  right: 15px;
+}
+@media (max-width: 1025px) {
+  .story-section__body {
+    padding: 60px;
+    max-width: 550px;
+  }
+}
+@media (max-width: 768px) {
+  .story-section__body {
+    position: relative;
+    right: 0;
+    padding: 30px;
+    max-width: 500px;
+  }
+}
+@media (max-width: 520px) {
+  .story-section__body {
+    padding-inline: 0;
+  }
+}
+.story-section__title {
+  margin-bottom: 24px;
+}
+@media (max-width: 1025px) {
+  .story-section__title {
+    margin-bottom: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .story-section__title {
+    margin-bottom: 12px;
+  }
+}
+.story-section__subtitle {
+  margin-bottom: 16px;
+}
+@media (max-width: 1025px) {
+  .story-section__subtitle {
+    margin-bottom: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .story-section__subtitle {
+    margin-bottom: 8px;
+  }
+}
+.story-section__text {
+  margin-bottom: 32px;
+}
+@media (max-width: 1025px) {
+  .story-section__text {
+    margin-bottom: 24px;
+  }
+}
+@media (max-width: 768px) {
+  .story-section__text {
+    margin-bottom: 16px;
+  }
 }
 
 .contact {
