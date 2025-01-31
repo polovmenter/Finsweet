@@ -1,0 +1,38 @@
+.partners {
+    padding-block: 96px;
+
+    &__inner {
+        padding-inline: 35px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        gap: 32px;
+
+        @include tablet {
+            flex-direction: column;
+            align-items: start;
+            padding-inline: 15px;
+        }
+    }
+
+    &__heading {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: start; 
+        flex-shrink: 0;
+    }
+
+    &__items {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        width: 100%;
+        gap: 24px;
+        max-width: 1015px;
+        flex-wrap: wrap;
+
+        @include tablet {
+            justify-content: center;
+        }
+    }
+}

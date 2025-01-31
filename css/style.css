@@ -174,7 +174,7 @@ svg *[stroke] {
 }
 
 .h4 {
-  font-size: clamp(16px, 1.6666666667vw, 24px);
+  font-size: clamp(20px, 1.6666666667vw, 24px);
 }
 
 .h5 {
@@ -1050,6 +1050,44 @@ button {
 @media (max-width: 768px) {
   .story-section__text {
     margin-bottom: 16px;
+  }
+}
+
+.partners {
+  padding-block: 96px;
+}
+.partners__inner {
+  padding-inline: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 32px;
+}
+@media (max-width: 1025px) {
+  .partners__inner {
+    flex-direction: column;
+    align-items: start;
+    padding-inline: 15px;
+  }
+}
+.partners__heading {
+  display: flex;
+  flex-direction: column-reverse;
+  align-items: start;
+  flex-shrink: 0;
+}
+.partners__items {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  gap: 24px;
+  max-width: 1015px;
+  flex-wrap: wrap;
+}
+@media (max-width: 1025px) {
+  .partners__items {
+    justify-content: center;
   }
 }
 
