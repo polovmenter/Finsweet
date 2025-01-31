@@ -1,0 +1,55 @@
+.authors {
+    text-align: center;
+
+    &--main {
+        padding-top: $section-padding-y ;
+    }
+
+    &__inner {
+        display: flex;
+        flex-direction: column;
+        row-gap: 48px;
+
+        @include tablet {
+            row-gap: 32px;
+        }
+    }
+
+    &__item {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        row-gap: 20px;
+        padding: 40px;
+        background-color: $gray-light;
+        transition-duration: $transition-duration;
+
+        @include tablet {
+            row-gap: 16px;
+            padding: 32px 24px;
+        }
+
+        @include mobile {
+            padding: 24px 16px;
+        }
+
+        @include hover {
+            background-color: $yellow-light;
+        }
+
+        &-image {
+            border-radius: 50%;
+            max-width: 128px;
+            height: auto;
+
+            @include tablet {
+                max-width: 100px;
+            }
+        }
+
+        &-name-link {
+            color: $dark;
+        }
+    
+    }
+}

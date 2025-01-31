@@ -1,5 +1,5 @@
 .category {
-    
+
     &--main {
         padding-block: $section-padding-y;
     }
@@ -18,37 +18,17 @@
         text-align: center;
     }
 
-    &__items {
-        display: grid;
-        grid-template-columns: repeat(4, 1fr);
-        gap: 32px;
-
-        @include tablet {
-            gap: 24px;
-        }
-
-        @include mobile {
-            grid-template-columns: repeat(2, 1fr);
-        }
-
-        @include mobile-s {
-            grid-template-columns: 1fr;
-        }
-    }
-
     &__item {
         display: flex;
         flex-direction: column;
         row-gap: 16px;
         border: 1px solid rgba(109, 110, 118, 0.3);
-        max-width: 296px;
         padding: 32px;
         transition-duration: $transition-duration;
 
         @include tablet {
             padding: 20px;
             row-gap: 12px;
-            justify-self: center;
             max-width: 270px;
         }
 

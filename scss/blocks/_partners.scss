@@ -1,6 +1,14 @@
 .partners {
     padding-block: 96px;
 
+    @include tablet {
+        padding-block: 60px;
+    }
+
+    @include mobile {
+        padding-block: 40px;
+    }
+
     &__inner {
         padding-inline: 35px;
         display: flex;

@@ -1,0 +1,41 @@
+.cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 32px;
+
+    @include tablet {
+        gap: 24px;
+    }
+
+    @include mobile {
+        gap: 16px;
+    }
+
+    @include mobile {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 370px) {
+        grid-template-columns: 1fr;
+    }
+
+    &__item {
+        max-width: 296px;
+        
+        @include mobile {
+            justify-self: end;  
+
+            &:nth-child(even) {
+                justify-self: start;
+            }
+        }
+
+        @media (max-width: 370px) {
+            justify-self: center;
+
+            &:nth-child(even) {
+                justify-self: center;
+            }
+        }   
+    }
+}
