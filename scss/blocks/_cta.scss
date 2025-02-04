@@ -1,0 +1,30 @@
+.cta {
+    padding-block: $section-padding-y;
+    padding-inline: $container-padding-x;
+    margin-inline: auto;
+    text-align: center;
+
+    &__inner {
+        max-width: 410px;
+
+        @include tablet {
+            max-width: 300px;
+        }
+    }
+
+    &__title {
+        margin-bottom: 16px;
+
+        @include mobile {
+            margin-bottom: 12px;
+        }
+    }
+
+    &__text {
+        margin-bottom: 32px;
+
+        @include mobile {
+            margin-bottom: 24px;
+        }
+    }
+}
