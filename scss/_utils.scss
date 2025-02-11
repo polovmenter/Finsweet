@@ -60,14 +60,14 @@
 }
 
 .h3 {
-    @include fluid-text(18, 28);
+    @include fluid-text(20, 28);
 
     letter-spacing: -1px;
     line-height: 1.42;
 }
 
 .h4 {
-    @include fluid-text(20, 24);
+    @include fluid-text(18, 24);
 }
 
 .h5 {

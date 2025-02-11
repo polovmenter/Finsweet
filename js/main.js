@@ -4,8 +4,8 @@ const sliderText = new Swiper(".testimonials__slider", {
 
 const sliderAuthor = new Swiper(".testimonials__author-slider", {
     navigation: {
-        prevEl: ".testimonials__button-prev",
-        nextEl: ".testimonials__button-next"
+        prevEl: ".testimonials__prev-button",
+        nextEl: ".testimonials__next-button"
     },
     effect: 'fade',
     fadeEffect: {

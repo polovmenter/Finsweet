@@ -1,40 +1,43 @@
 .testimonials {
+
+    &__container {
+        @include mobile-s {
+            padding-inline: 0;
+        }
+    }
     
     &__inner {
         padding: 80px 110px;
         background-color: $yellow-light;
         display: flex;
         align-items: start;
-        justify-content: center;
         column-gap: 120px;
 
-        @include desktop {
-            padding: 60px 80px;
-            column-gap: 100px;
-        }
-
         @include tablet {
+            padding: 40px 55px;
             column-gap: 60px;
-            padding: 30px 40px;
         }
 
         @include mobile {
             flex-direction: column;
-            align-items: start;
             row-gap: 40px;
+            padding: 20px 30px;
+        }
+
+        @include mobile-s {
+            padding: 20px 25px;
         }
     }
 
     &__content {
+        padding-top: 12px;
+        max-width: 310px;
         display: flex;
         flex-direction: column;
         row-gap: 16px;
-        max-width: 310px;
-        width: 100%;
-        padding-top: 12px;
 
-        @include tablet {
-            max-width: 250px;
+        @include mobile {
+            row-gap: 12px;
         }
     }
 
@@ -42,54 +45,39 @@
         display: flex;
         flex-direction: column;
         row-gap: 12px;
-        max-width: 275px;
+
+        @include mobile {
+            row-gap: 8px;
+        }
     }
 
-    &__text {
-        max-width: 310px;
+    &__sliders {
+        display: flex;
+        flex-direction: column;
+        row-gap: 114px;
+        max-width: 630px;
+        width: 65%;
+        padding-left: 96px;
+        border-left: 1px solid rgba(109, 110, 118, 0.4);
+
+        @include tablet {
+            padding-left: 40px;
+            row-gap: 70px;
+        }
+
+        @include mobile {
+            padding-left: 0;
+            border-left: none;
+            width: 100%;
+            row-gap: 24px;
+        }
     }
 
     &__slider {
-        max-width: 36vw;
-        margin: 0;
-
-        @include tablet {
-            max-width: 50vw;
-        }
-
-        &-wrapper {
-            padding-left: 96px;
-            border-left: 1px solid rgba(109, 110, 118, 0.4);
-            display: flex;
-            flex-direction: column;
-            align-items: start;
-            row-gap: 120px;
-
-            @include desktop {
-                row-gap: 100px;
-            }
-
-            @include tablet {
-                row-gap: 60px;
-                padding-left: 60px;
-            }
-
-            @include mobile {
-                border: none;
-                padding: 0;
-            }
-        }
 
         &-text {
-            max-width: 30vw;
-
-            @include tablet {
-                max-width: 40vw;
-            }
-
-            // @include mobile {
-            //     max-width: 500px;
-            // }
+            max-width: 460px;
+            width: 87%;
         }
     }
 
@@ -97,23 +85,25 @@
 
         &-slider {
             position: relative;
-            max-width: 36vw;
             min-height: 62px;
-            margin: 0;
-
-            @include tablet {
-                max-width: 50vw;
-            }
         }
 
         &-item {
             display: flex;
-            align-items: start;
             column-gap: 16px;
+            align-items: start;
+            padding-top: 7px;
         }
 
         &-image {
             border-radius: 50%;
+        }
+
+        &-info {
+            display: flex;
+            flex-direction: column;
+            align-items: start;
+            max-width: 200px;
         }
 
         &-post {
@@ -123,28 +113,34 @@
 
     &__navigation {
         position: absolute;
+        top: 0;
         right: 0;
-        top: 50%;
-        transform: translateY(-50%);
-        display: flex;
-        column-gap: 24px;
-        align-items: center;
         z-index: 2;
+        display: flex;
+        align-items: center;
+        column-gap: 24px;
+
+        @include tablet {
+            column-gap: 16px;
+        }
+
+        @include mobile-s {
+            position: relative;
+            justify-content: end;
+        }
     }
 
-    &__button-prev,
-    &__button-next {
-        border-radius: 50%;
+    &__prev-button,
+    &__next-button {
         width: 62px;
         height: 62px;
-        display: flex;
-        justify-content: center;
-        align-items: center;
         background-color: $dark;
+        color: $light;
+        border-radius: 50%;
         color: $light;
     }
 
-    &__button-prev {
+    &__prev-button {
         width: 48px;
         height: 48px;
         background-color: $light;
