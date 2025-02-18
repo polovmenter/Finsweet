@@ -1589,6 +1589,115 @@ button {
   color: var(--color-dark);
 }
 
+.blog-top__inner {
+  display: flex;
+  -moz-column-gap: 140px;
+       column-gap: 140px;
+  align-items: center;
+}
+@media (max-width: 1025px) {
+  .blog-top__inner {
+    -moz-column-gap: 100px;
+         column-gap: 100px;
+  }
+}
+@media (max-width: 768px) {
+  .blog-top__inner {
+    flex-direction: column;
+    row-gap: 32px;
+  }
+}
+.blog-top__content {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+  row-gap: 16px;
+  max-width: 624px;
+  text-align: left;
+}
+@media (max-width: 1025px) {
+  .blog-top__content {
+    row-gap: 12px;
+  }
+}
+@media (max-width: 768px) {
+  .blog-top__content {
+    max-width: 420px;
+    row-gap: 8px;
+  }
+}
+.blog-top__heading {
+  display: flex;
+  flex-direction: column;
+  row-gap: 20px;
+}
+@media (max-width: 1025px) {
+  .blog-top__heading {
+    row-gap: 16px;
+  }
+}
+@media (max-width: 768px) {
+  .blog-top__heading {
+    row-gap: 12px;
+  }
+}
+.blog-top__info {
+  display: flex;
+  align-items: center;
+  -moz-column-gap: 12px;
+       column-gap: 12px;
+  color: var(--color-gray-dark);
+}
+@media (max-width: 1025px) {
+  .blog-top__info {
+    -moz-column-gap: 8px;
+         column-gap: 8px;
+  }
+}
+.blog-top__info::after {
+  display: block;
+  content: "";
+  width: 2px;
+  height: 10px;
+  background-color: currentColor;
+}
+.blog-top__author-link {
+  color: var(--color-purple);
+}
+@media (hover: hover) {
+  .blog-top__author-link:hover {
+    text-decoration: underline;
+  }
+}
+@media (hover: none) {
+  .blog-top__author-link:active {
+    text-decoration: underline;
+  }
+}
+.blog-top__date {
+  order: 3;
+}
+.blog-top__text {
+  color: var(--color-gray);
+  margin-bottom: 16px;
+}
+@media (max-width: 1025px) {
+  .blog-top__text {
+    margin-bottom: 12px;
+  }
+}
+.blog-top__image {
+  width: 45%;
+  height: auto;
+  max-width: 515px;
+}
+@media (max-width: 768px) {
+  .blog-top__image {
+    max-width: 420px;
+    width: 100%;
+  }
+}
+
 .contact {
   --container-width: 770px;
   padding-block: var(--section-padding-y);
